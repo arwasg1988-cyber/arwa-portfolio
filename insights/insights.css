@@ -62,7 +62,11 @@
 
   border-radius: var(--radius);
 
-  background: linear-gradient(145deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
+  background:
+
+    radial-gradient(circle at top right, rgba(140, 123, 255, 0.12), transparent 38%),
+
+    linear-gradient(145deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
 
   box-shadow: var(--shadow);
 
@@ -72,11 +76,15 @@
 
 .insight-card:hover {
 
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.01);
 
   border-color: rgba(140, 123, 255, 0.38);
 
-  background: rgba(255,255,255,0.08);
+  background:
+
+    radial-gradient(circle at top right, rgba(140, 123, 255, 0.18), transparent 42%),
+
+    rgba(255,255,255,0.08);
 
 }
 
@@ -140,31 +148,17 @@
 
   min-height: 280px;
 
-  background: linear-gradient(135deg, rgba(140, 123, 255, 0.16), rgba(102, 217, 232, 0.055));
+  background:
 
-}
+    radial-gradient(circle at top right, rgba(140, 123, 255, 0.18), transparent 40%),
 
-@media (max-width: 1000px) {
-
-  .insights-grid {
-
-    grid-template-columns: 1fr;
-
-  }
-
-  .insights-hero {
-
-    min-height: auto;
-
-    padding-top: 90px;
-
-  }
+    linear-gradient(135deg, rgba(140, 123, 255, 0.16), rgba(102, 217, 232, 0.055));
 
 }
 
 .article-page {
 
-  max-width: 1500px;
+  max-width: 1120px;
 
   margin: 0 auto;
 
@@ -196,7 +190,7 @@
 
 .article-header h1 {
 
-  max-width: 940px;
+  max-width: 980px;
 
   font-size: clamp(44px, 7vw, 82px);
 
@@ -252,6 +246,8 @@
 
 .article-content {
 
+  max-width: 880px;
+
   margin-top: 70px;
 
   padding: 44px;
@@ -260,7 +256,11 @@
 
   border-radius: calc(var(--radius) + 10px);
 
-  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+  background:
+
+    radial-gradient(circle at top right, rgba(140, 123, 255, 0.11), transparent 42%),
+
+    linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
 
   box-shadow: var(--shadow);
 
@@ -312,40 +312,6 @@
 
 }
 
-.article-footer {
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 14px;
-
-  margin-top: 34px;
-
-}
-
-@media (max-width: 900px) {
-
-  .article-page {
-
-    padding-top: 60px;
-
-  }
-
-  .article-content {
-
-    padding: 28px;
-
-  }
-
-  .article-content p {
-
-    font-size: 16px;
-
-  }
-
-}
-
 .article-content ul {
 
   list-style: none;
@@ -376,7 +342,7 @@
 
   font-size: 17px;
 
-  line-height: 1.6;
+  line-height: 1.65;
 
 }
 
@@ -393,5 +359,113 @@
   color: #b7abff;
 
   font-size: 16px;
+
+}
+
+.article-footer {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 34px;
+
+}
+
+/* RTL article polish */
+
+html[dir="rtl"] .insights-hero h1,
+
+html[dir="rtl"] .article-header h1 {
+
+  letter-spacing: -0.035em;
+
+  line-height: 1.18;
+
+}
+
+html[dir="rtl"] .article-content {
+
+  margin-right: 0;
+
+  margin-left: auto;
+
+}
+
+html[dir="rtl"] .article-content li {
+
+  padding: 16px 52px 16px 18px;
+
+}
+
+html[dir="rtl"] .article-content li::before {
+
+  left: auto;
+
+  right: 18px;
+
+}
+
+html[dir="rtl"] .article-content blockquote {
+
+  border-left: 0;
+
+  border-right: 3px solid var(--accent);
+
+}
+
+html[dir="rtl"] .back-link:hover {
+
+  transform: translateX(4px);
+
+}
+
+@media (max-width: 1000px) {
+
+  .insights-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .insights-hero {
+
+    min-height: auto;
+
+    padding-top: 90px;
+
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .article-page {
+
+    padding-top: 60px;
+
+  }
+
+  .article-content {
+
+    max-width: 100%;
+
+    padding: 28px;
+
+  }
+
+  .article-content p {
+
+    font-size: 16px;
+
+  }
+
+  .article-content li {
+
+    font-size: 15px;
+
+  }
 
 }
