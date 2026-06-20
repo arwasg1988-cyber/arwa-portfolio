@@ -1,111 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+<urlset
+
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/" />
+
     <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
+
+    <changefreq>weekly</changefreq>
+
     <priority>1.0</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/ar/</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/" />
+
     <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
+
+    <changefreq>weekly</changefreq>
+
     <priority>1.0</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/insights/articles/designers-front-end.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designers-front-end.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/designers-front-end.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designers-front-end.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.8</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/designers-front-end.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designers-front-end.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/designers-front-end.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designers-front-end.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.8</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/insights/articles/arabic-ux-challenges.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/arabic-ux-challenges.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/arabic-ux-challenges.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/arabic-ux-challenges.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.8</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/arabic-ux-challenges.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/arabic-ux-challenges.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/arabic-ux-challenges.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/arabic-ux-challenges.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.8</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/insights/articles/designing-for-vision-2030.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designing-for-vision-2030.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/designing-for-vision-2030.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designing-for-vision-2030.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.8</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/designing-for-vision-2030.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designing-for-vision-2030.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/articles/designing-for-vision-2030.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/articles/designing-for-vision-2030.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.8</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/insights/case-studies/toura-case-study.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/toura-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/case-studies/toura-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/toura-case-study.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.85</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/ar/insights/case-studies/toura-case-study.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/toura-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/case-studies/toura-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/toura-case-study.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.85</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/insights/case-studies/gby-case-study.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/gby-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/case-studies/gby-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/gby-case-study.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.85</priority>
+
   </url>
+
   <url>
+
     <loc>https://arwa-portfolio-orcin.vercel.app/ar/insights/case-studies/gby-case-study.html</loc>
+
     <xhtml:link rel="alternate" hreflang="en" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/gby-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="ar" href="https://arwa-portfolio-orcin.vercel.app/ar/insights/case-studies/gby-case-study.html" />
+
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arwa-portfolio-orcin.vercel.app/insights/case-studies/gby-case-study.html" />
+
     <lastmod>2026-06-20</lastmod>
+
     <changefreq>monthly</changefreq>
+
     <priority>0.85</priority>
+
   </url>
+
 </urlset>
