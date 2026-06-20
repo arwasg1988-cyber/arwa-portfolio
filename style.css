@@ -140,7 +140,9 @@ img {
 
   align-items: center;
 
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  gap: 22px;
 
   padding: 18px 6vw;
 
@@ -203,6 +205,8 @@ img {
 .nav-pill {
 
   display: flex;
+
+  margin-inline-start: auto;
 
   gap: 20px;
 
@@ -757,8 +761,6 @@ h2 {
   font-size: 14px;
 
 }
-
-ul { padding-left: 18px; }
 
 .project-actions { margin-top: 28px; }
 
@@ -1535,5 +1537,98 @@ footer {
     grid-template-columns: 1fr;
 
   }
+
+}
+
+.header-lang-switch {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(140, 123, 255, 0.36);
+  border-radius: 50%;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 32% 25%, rgba(255, 255, 255, 0.16), transparent 34%),
+    linear-gradient(145deg, rgba(140, 123, 255, 0.34), rgba(140, 123, 255, 0.12));
+  box-shadow:
+
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+
+    0 0 26px rgba(140,123,255,0.22),
+
+    0 14px 34px rgba(140,123,255,0.18);
+  font-family: "Inter", "IBM Plex Sans Arabic", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transform: translateZ(0);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+
+
+.header-lang-switch:hover {
+  transform: translateY(-2px);
+  border-color: rgba(140, 123, 255, 0.68);
+  background:
+    radial-gradient(circle at 32% 25%, rgba(255, 255, 255, 0.20), transparent 34%),
+    linear-gradient(145deg, rgba(140, 123, 255, 0.46), rgba(140, 123, 255, 0.16));
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+    0 18px 42px rgba(140, 123, 255, 0.26);
+}
+
+.project-info ul {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 22px 0 0;
+
+  display: grid;
+
+  gap: 14px;
+
+}
+
+.project-info li {
+
+  position: relative;
+
+  padding: 16px 18px 16px 52px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 18px;
+
+  color: var(--soft);
+
+  background: rgba(255, 255, 255, 0.045);
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+}
+
+.project-info li::before {
+
+  content: "✦";
+
+  position: absolute;
+
+  left: 18px;
+
+  top: 15px;
+
+  color: #b7abff;
+
+  font-size: 16px;
 
 }

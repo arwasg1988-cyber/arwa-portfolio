@@ -1,0 +1,180 @@
+
+/* Arabic / RTL layer
+   Shared by all Arabic pages. Keep structural LTR styles in style.css and only override direction-sensitive behavior here. */
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  font-family: "IBM Plex Sans Arabic", "Inter", sans-serif;
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .brand,
+html[dir="rtl"] .nav-pill a,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .project-link,
+html[dir="rtl"] .tag-row,
+html[dir="rtl"] .article-meta,
+html[dir="rtl"] .article-footer,
+html[dir="rtl"] .footer-signature {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .lead,
+html[dir="rtl"] .sublead,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .project-info,
+html[dir="rtl"] .about-grid,
+html[dir="rtl"] .contact-card,
+html[dir="rtl"] .article-header,
+html[dir="rtl"] .article-content,
+html[dir="rtl"] .insights-hero {
+  text-align: right;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .article-header h1,
+html[dir="rtl"] .insights-hero h1 {
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0.04em;
+}
+
+html[dir="rtl"] .hero {
+  grid-template-columns: 0.85fr 1.15fr;
+}
+
+html[dir="rtl"] .hero-copy {
+  order: 2;
+}
+
+html[dir="rtl"] .hero-panel {
+  order: 1;
+}
+
+html[dir="rtl"] .project-card.large,
+html[dir="rtl"] .project-card:not(.moodly-card):not(.enterprise-card) {
+  direction: rtl;
+}
+
+html[dir="rtl"] .project-info ul,
+html[dir="rtl"] .article-content ul {
+  padding-right: 0;
+}
+
+html[dir="rtl"] .project-info li {
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+html[dir="rtl"] .project-info li::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .article-content li {
+  padding: 16px 52px 16px 18px;
+}
+
+html[dir="rtl"] .article-content li::before {
+  left: auto;
+  right: 18px;
+}
+
+html[dir="rtl"] .article-content blockquote {
+  border-left: 0;
+  border-right: 3px solid var(--accent);
+}
+
+html[dir="rtl"] .back-link:hover {
+  transform: translateX(4px);
+}
+
+html[dir="rtl"] .bi-arrow-left,
+html[dir="rtl"] .bi-arrow-right,
+html[dir="rtl"] .bi-box-arrow-up-right {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .gby-slider,
+html[dir="rtl"] .moodly-slider,
+html[dir="rtl"] .slider-track,
+html[dir="rtl"] .moodly-track {
+  direction: ltr;
+}
+
+html[dir="rtl"] .header-lang-switch {
+  font-family: "Inter", "IBM Plex Sans Arabic", sans-serif;
+  direction: ltr;
+}
+
+@media (max-width: 900px) {
+  html[dir="rtl"] .hero {
+    grid-template-columns: 1fr;
+  }
+
+  html[dir="rtl"] .hero-copy,
+  html[dir="rtl"] .hero-panel {
+    order: initial;
+  }
+}
+
+html[dir="rtl"] .brand {
+
+  flex-direction: row;
+
+}
+
+html[dir="rtl"] .project-info li {
+
+  padding: 16px 52px 16px 18px;
+
+}
+
+html[dir="rtl"] .project-info li::before {
+
+  left: auto;
+
+  right: 18px;
+
+}
+
+html[dir="rtl"] .tag-row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+}
+
+.about-text {
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+}
+
+.about p {
+
+  font-size: clamp(18px, 1.6vw, 20px);
+
+  line-height: 1.9;
+
+}
