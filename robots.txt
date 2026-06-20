@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://arwa-portfolio-orcin.vercel.app/sitemap.xml
+Sitemap: https://www.arwa-alghamdi.com/sitemap.xml
