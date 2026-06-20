@@ -164,7 +164,7 @@
 
 .article-page {
 
-  max-width: 1200px;
+  max-width: 1500px;
 
   margin: 0 auto;
 
@@ -343,5 +343,55 @@
     font-size: 16px;
 
   }
+
+}
+
+.article-content ul {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 22px 0 34px;
+
+  display: grid;
+
+  gap: 14px;
+
+}
+
+.article-content li {
+
+  position: relative;
+
+  padding: 16px 18px 16px 52px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 18px;
+
+  color: var(--soft);
+
+  background: rgba(255, 255, 255, 0.045);
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+}
+
+.article-content li::before {
+
+  content: "✦";
+
+  position: absolute;
+
+  left: 18px;
+
+  top: 15px;
+
+  color: #b7abff;
+
+  font-size: 16px;
 
 }
