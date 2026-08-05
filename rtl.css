@@ -33,7 +33,7 @@ html[dir="rtl"] .insights-hero h1 {
 
 html[dir="rtl"] h1 {
 
-  font-size: clamp(42px, 6.3vw, 68px);
+  font-size: clamp(42px, 8vw, 82px);
 
 }
 
@@ -117,7 +117,7 @@ html[dir="rtl"] .site-header {
 
 html[dir="rtl"] .brand {
 
-  flex-direction: row;
+  flex-direction: row-reverse;
 
 }
 
@@ -135,15 +135,11 @@ html[dir="rtl"] .btn,
 
 html[dir="rtl"] .project-link,
 
-html[dir="rtl"] .article-footer {
-
-  flex-direction: row-reverse;
-
-}
+html[dir="rtl"] .article-footer,
 
 html[dir="rtl"] .footer-signature {
 
-  flex-direction: row;
+  flex-direction: row-reverse;
 
 }
 
@@ -161,19 +157,19 @@ html[dir="rtl"] .header-lang-switch {
 
 html[dir="rtl"] .hero {
 
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 0.85fr 1.15fr;
 
 }
 
 html[dir="rtl"] .hero-copy {
 
-  order: 1;
+  order: 2;
 
 }
 
 html[dir="rtl"] .hero-panel {
 
-  order: 2;
+  order: 1;
 
 }
 
@@ -227,11 +223,9 @@ html[dir="rtl"] .tag-row {
 
   gap: 10px;
 
-  justify-content: flex-start;
+  justify-content: flex-end;
 
   align-items: center;
-
-  direction: rtl;
 
 }
 
@@ -323,165 +317,4 @@ html[dir="rtl"] .moodly-track {
 
   }
 
-}
-/* About story — Phase 4 */
-html[dir="rtl"] .about-narrative .about-lead {
-  letter-spacing: 0;
-  line-height: 1.65;
-}
-
-html[dir="rtl"] .about-principle span {
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-html[dir="rtl"] .about-step h3 {
-  letter-spacing: 0;
-}
-
-
-/* Contact — Phase 5 */
-html[dir="rtl"] .contact-intro h2 { letter-spacing: 0; line-height: 1.25; }
-html[dir="rtl"] .contact-option-copy small { letter-spacing: 0; text-transform: none; }
-html[dir="rtl"] .contact-option:hover .contact-option-arrow { transform: translate(-2px,-2px); }
-
-/* Static project covers */
-html[dir="rtl"] .law-project-cover {
-  align-items: flex-start;
-  text-align: right;
-}
-
-html[dir="rtl"] .law-cover-frame {
-  transform: rotate(3deg);
-}
-
-html[dir="rtl"] .enterprise-cover-sidebar {
-  inset: 0 0 0 auto;
-  border-inline-end: 0;
-  border-inline-start: 1px solid rgba(255,255,255,.09);
-}
-
-html[dir="rtl"] .enterprise-cover-topbar {
-  inset: 0 18% auto 0;
-}
-
-
-/* Arabic layout corrections */
-html[dir="rtl"] .brand-logo {
-  order: 0;
-}
-
-html[dir="rtl"] .brand > span:not(.brand-logo) {
-  order: 1;
-}
-
-html[dir="rtl"] .hero-copy {
-  text-align: right;
-}
-
-html[dir="rtl"] .hero-copy .actions {
-  justify-content: flex-start;
-}
-
-html[dir="rtl"] .hero-panel {
-  direction: rtl;
-}
-
-html[dir="rtl"] .moodly-card .project-info,
-html[dir="rtl"] .enterprise-card .project-info {
-  text-align: right;
-  align-items: stretch;
-}
-
-html[dir="rtl"] .moodly-card .tag-row,
-html[dir="rtl"] .enterprise-card .tag-row {
-  width: 100%;
-  justify-content: flex-start;
-}
-
-html[dir="rtl"] footer {
-  direction: rtl;
-}
-
-html[dir="rtl"] .footer-signature {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-html[dir="rtl"] .footer-signature i {
-  margin: 0;
-}
-
-
-/* Final Arabic project presentation fixes */
-html[dir="rtl"] .project-actions,
-html[dir="rtl"] .project-actions-group {
-  direction: rtl;
-  justify-content: flex-start;
-  text-align: right;
-}
-
-html[dir="rtl"] .project-link {
-  direction: rtl;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: right;
-}
-
-html[dir="rtl"] .project-link i {
-  margin: 0;
-  flex: 0 0 auto;
-}
-
-html[dir="rtl"] .gby-project-cover {
-  align-items: flex-start;
-  text-align: right;
-}
-
-html[dir="rtl"] .gby-cover-browser {
-  transform: rotate(2.5deg);
-}
-
-
-/* Final Arabic typography balance */
-html[dir="rtl"] h1 { line-height: 1.08; }
-html[dir="rtl"] h2 { font-size: clamp(29px, 3.8vw, 43px); line-height: 1.3; }
-html[dir="rtl"] .lead { font-size: clamp(20px, 2.15vw, 29px); line-height: 1.55; }
-html[dir="rtl"] .project-info h3 { font-size: clamp(28px, 3vw, 39px); line-height: 1.3; }
-html[dir="rtl"] .project-info p,
-html[dir="rtl"] .project-info li { font-size: 15px; }
-
-/* Final Arabic spacing and CTA consistency */
-html[dir="rtl"] .project-info li {
-  padding: 15px 42px 15px 18px;
-}
-
-html[dir="rtl"] .project-info li::before {
-  right: 15px;
-  left: auto;
-  top: 14px;
-}
-
-html[dir="rtl"] .project-actions .project-link,
-html[dir="rtl"] .project-actions-group .project-link {
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-}
-
-html[dir="rtl"] .contact-location strong,
-html[dir="rtl"] .contact-location small {
-  text-align: right;
-}
-
-@media (max-width: 700px) {
-  html[dir="rtl"] .project-info li {
-    padding: 14px 39px 14px 16px;
-  }
-
-  html[dir="rtl"] .project-info li::before {
-    right: 14px;
-    top: 13px;
-  }
 }
