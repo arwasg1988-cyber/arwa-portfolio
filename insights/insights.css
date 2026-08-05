@@ -536,3 +536,604 @@ html[dir="rtl"] .gby-case-cover{text-align:right}
 html[dir="rtl"] .gby-case-cover-copy>span{letter-spacing:0;text-transform:none}
 @media(max-width:800px){.gby-case-cover{grid-template-columns:1fr;min-height:0}.gby-case-pillars{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.gby-case-cover{padding:28px 22px;margin-bottom:46px}.gby-case-pillars{grid-template-columns:1fr}.gby-case-cover-copy strong{font-size:58px}}
+
+/* CASE STUDY FINAL PRODUCTION FIX — START */
+
+.case-study-page {
+
+  min-height: 100vh;
+
+  cursor: auto !important;
+
+}
+
+/* تعطيل المؤشر المخصص داخل دراسات الحالة فقط */
+
+.case-study-page .cursor-dot,
+
+.case-study-page .cursor-outline {
+
+  display: none !important;
+
+}
+
+/* Header */
+
+.case-study-page .topbar {
+
+  position: relative;
+
+  z-index: 20;
+
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  padding: 22px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 28px;
+
+}
+
+.case-study-page .topbar .brand {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex: 0 0 auto;
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+.case-study-page .topbar .brand-logo {
+
+  width: 42px;
+
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: grid;
+
+  place-items: center;
+
+}
+
+.case-study-page .topbar .brand-logo img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+}
+
+.case-study-page .topbar .brand-copy {
+
+  display: grid;
+
+  gap: 3px;
+
+  line-height: 1.15;
+
+}
+
+.case-study-page .topbar .brand-copy strong {
+
+  font-size: 0.95rem;
+
+  white-space: nowrap;
+
+}
+
+.case-study-page .topbar .brand-copy small {
+
+  font-size: 0.72rem;
+
+  opacity: 0.68;
+
+  white-space: nowrap;
+
+}
+
+.case-study-page .topbar .nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 24px;
+
+  margin-inline-start: auto;
+
+}
+
+.case-study-page .topbar .nav-links a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+}
+
+.case-study-page .topbar .header-lang-switch {
+
+  width: 44px;
+
+  height: 44px;
+
+  flex: 0 0 44px;
+
+  display: inline-grid;
+
+  place-items: center;
+
+  text-decoration: none;
+
+}
+
+/* محتوى الصفحة بلا قائمة جانبية */
+
+.case-study-page .case-layout.case-layout-no-toc {
+
+  display: block;
+
+}
+
+.case-study-page .case-layout.case-layout-no-toc .case-content {
+
+  width: 100%;
+
+  max-width: 920px;
+
+  margin-inline: auto;
+
+}
+
+/* إصلاح النجوم والقوائم */
+
+.case-study-page .case-content ul {
+
+  list-style: none !important;
+
+  margin: 28px 0;
+
+  padding: 0 !important;
+
+  display: grid;
+
+  gap: 12px;
+
+}
+
+.case-study-page .case-content ul li {
+
+  position: relative;
+
+  margin: 0;
+
+  min-height: 58px;
+
+  padding: 16px 22px 16px 56px !important;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.case-study-page .case-content ul li::before {
+
+  content: "✦" !important;
+
+  position: absolute;
+
+  left: 22px !important;
+
+  right: auto !important;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  line-height: 1;
+
+}
+
+html[dir="rtl"] .case-study-page .case-content ul li {
+
+  padding: 16px 56px 16px 22px !important;
+
+}
+
+html[dir="rtl"] .case-study-page .case-content ul li::before {
+
+  right: 22px !important;
+
+  left: auto !important;
+
+}
+
+/* Footer */
+
+.case-study-page .article-footer {
+
+  width: min(920px, calc(100% - 48px));
+
+  margin: 80px auto 40px;
+
+  padding-top: 28px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+}
+
+.case-study-page .article-footer .btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+
+  .case-study-page .topbar {
+
+    width: min(100% - 32px, 1180px);
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+  }
+
+  .case-study-page .topbar .nav-links {
+
+    order: 3;
+
+    width: 100%;
+
+    margin-inline-start: 0;
+
+    justify-content: flex-start;
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    padding-bottom: 4px;
+
+  }
+
+}
+
+@media (max-width: 620px) {
+
+  .case-study-page .topbar .brand-copy small {
+
+    display: none;
+
+  }
+
+  .case-study-page .topbar .nav-links {
+
+    font-size: 0.86rem;
+
+  }
+
+  .case-study-page .article-footer {
+
+    width: min(100% - 32px, 920px);
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+  .case-study-page .article-footer .btn {
+
+    width: 100%;
+
+  }
+
+}
+
+/* CASE STUDY FINAL PRODUCTION FIX — END */
+
+/* CASE STUDY CONTENT ALIGNMENT — START */
+
+/* توحيد عرض ومحاذاة جميع أجزاء دراسة الحالة */
+
+.case-study-page .article-page.case-study {
+
+  width: min(1120px, calc(100% - 48px));
+
+  margin-inline: auto;
+
+}
+
+.case-study-page .case-hero,
+
+.case-study-page .case-layout,
+
+.case-study-page .case-layout.case-layout-no-toc,
+
+.case-study-page .case-layout.case-layout-no-toc .case-content {
+
+  width: 100%;
+
+  max-width: none;
+
+  margin-inline: 0;
+
+}
+
+/* مسافة متوازنة بين الهيدر وبداية محتوى دراسة الحالة */
+
+.case-study-page .case-hero {
+
+  padding-top: clamp(64px, 8vw, 112px);
+
+  padding-bottom: clamp(56px, 7vw, 96px);
+
+}
+
+/* الكارد يبدأ وينتهي على نفس خط العنوان */
+
+.case-study-page .case-content {
+
+  box-sizing: border-box;
+
+}
+
+/* أزرار نهاية دراسة الحالة */
+
+.case-study-page .case-study-bottom-actions {
+
+  width: 100%;
+
+  margin: 48px 0 72px;
+
+  padding-top: 32px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+}
+
+.case-study-page .case-study-bottom-actions .btn {
+
+  min-height: 54px;
+
+  padding-inline: 24px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+}
+
+/* فوتر الموقع الرئيسي بعد أزرار دراسة الحالة */
+
+.case-study-page > footer {
+
+  margin-top: 0;
+
+}
+
+@media (max-width: 720px) {
+
+  .case-study-page .article-page.case-study {
+
+    width: min(100% - 32px, 1120px);
+
+  }
+
+  .case-study-page .case-hero {
+
+    padding-top: 72px;
+
+    padding-bottom: 48px;
+
+  }
+
+  .case-study-page .case-study-bottom-actions {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-bottom: 48px;
+
+  }
+
+  .case-study-page .case-study-bottom-actions .btn {
+
+    width: 100%;
+
+  }
+
+}
+
+/* CASE STUDY CONTENT ALIGNMENT — END */
+
+/* CASE STUDY FINAL ORDER — START */
+
+/* لا أزرار داخل الـHero */
+
+.case-study-page .case-hero .case-actions {
+
+  display: none !important;
+
+}
+
+/* الأزرار تأتي بعد المحتوى وقبل الفوتر */
+
+.case-study-page .case-study-bottom-actions {
+
+  width: 100%;
+
+  margin: 56px 0 88px;
+
+  padding-top: 32px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 18px;
+
+}
+
+.case-study-page .case-study-bottom-actions .btn {
+
+  min-height: 54px;
+
+  padding: 0 26px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+}
+
+/* الفوتر دائمًا بعد main وبمسافة مريحة */
+
+.case-study-page > footer {
+
+  width: min(100% - 48px, 1800px);
+
+  margin: 0 auto;
+
+  padding-top: 42px;
+
+  padding-bottom: 42px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+}
+
+@media (max-width: 720px) {
+
+  .case-study-page .case-study-bottom-actions {
+
+    margin: 44px 0 64px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+  .case-study-page .case-study-bottom-actions .btn {
+
+    width: 100%;
+
+  }
+
+  .case-study-page > footer {
+
+    width: min(100% - 32px, 1800px);
+
+  }
+
+}
+
+/* CASE STUDY FINAL ORDER — END */
+
+
+/* CASE STUDY SPACING FINAL — START */
+
+/* تقليل المسافة بين معلومات المشروع وكارد المحتوى */
+
+.case-study-page .case-hero {
+
+  padding-bottom: 32px !important;
+
+  margin-bottom: 0 !important;
+
+}
+
+.case-study-page .case-layout,
+
+.case-study-page .case-layout.case-layout-no-toc {
+
+  margin-top: 0 !important;
+
+  padding-top: 0 !important;
+
+}
+
+.case-study-page .case-content {
+
+  margin-top: 0 !important;
+
+}
+
+/* إزالة الخط الموجود فوق الأزرار السفلية */
+
+.case-study-page .case-study-bottom-actions {
+
+  border-top: 0 !important;
+
+  padding-top: 0 !important;
+
+  margin-top: 36px !important;
+
+}
+
+/* CASE STUDY SPACING FINAL — END */
