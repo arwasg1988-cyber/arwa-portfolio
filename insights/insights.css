@@ -1161,3 +1161,56 @@ html[dir="rtl"] .case-study-page .case-content ul li::before {
 
 }
 
+
+
+
+/* ===== CASE STUDY TYPOGRAPHY ===== */
+
+.case-hero h1{
+
+    font-size:48px!important;
+
+    line-height:1.12!important;
+
+}
+
+.case-lede{
+
+    font-size:22px!important;
+
+    line-height:1.7!important;
+
+    max-width:760px;
+
+}
+
+.case-section h2{
+
+    font-size:30px!important;
+
+    margin-bottom:16px!important;
+
+}
+
+.case-content p,
+
+.case-content li{
+
+    font-size:18px!important;
+
+    line-height:1.9!important;
+
+}
+
+.article-meta{
+
+    font-size:15px!important;
+
+}
+
+.case-toc{
+
+    font-size:15px!important;
+
+}
+
