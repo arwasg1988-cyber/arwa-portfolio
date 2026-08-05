@@ -1137,3 +1137,27 @@ html[dir="rtl"] .case-study-page .case-content ul li::before {
 }
 
 /* CASE STUDY SPACING FINAL — END */
+
+
+/* ===== FINAL HERO SPACING ===== */
+
+.case-study-page{
+
+    padding-top:0 !important;
+
+}
+
+.case-study-page main{
+
+    padding-top:32px !important;
+
+}
+
+.case-study-page .case-hero{
+
+    margin-top:0 !important;
+
+    padding-top:24px !important;
+
+}
+
